@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOURS - Online Watch Store</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#home">HOURS</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#login" target="blank" onclick="toggleLogin()">Login</a></li>
+                    <li><a href="#signup" target="blank" onclick="toggleSignup()">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section-home">
+        <div class="container">
+            <h2>Welcome to HOURS</h2>
+            <p>Your one-stop shop for the finest wrist watches.</p>
+            <div class="watches">
+                <div class="watch">
+                    <img src="images (1).jpg" alt="Watch 1">
+                    <p>Classic Leather Watch</p>
+                    <p>$199.99</p>
+                    <div class="actions">
+                        <button class="favorite"><i class="fas fa-heart"></i></button>
+                        <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="buy">Buy Watch</button>
+                    </div>
+                </div>
+                <div class="watch">
+                    <img src="5935a7dbb74af41b008b673d.jpeg" alt="Watch 2">
+                    <p>Modern Watch</p>
+                    <p>$149.99</p>
+                    <div class="actions">
+                        <button class="favorite"><i class="fas fa-heart"></i></button>
+                        <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="buy">Buy Watch</button>
+                    </div>
+                </div>
+                <div class="watch">
+                    <img src="82fdb1dc-893e-45ac-8b26-403b3dfae3c6.__CR0,0,1600,1200_PT0_SX800_V1___.jpg" alt="Watch 3">
+                    <p>Elegant Gold Watch</p>
+                    <p>$299.99</p>
+                    <div class="actions">
+                        <button class="favorite"><i class="fas fa-heart"></i></button>
+                        <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="buy">Buy Watch</button>
+                    </div>
+                </div>
+                
+                <div class="watch">
+                    <img src="watch-classic-gold-leather-strap-1_800x.jpeg" alt="Watch 4">
+                    <p>Chronograph Watch</p>
+                    <p>$249.99</p>
+                    <div class="actions">
+                        <button class="favorite"><i class="fas fa-heart"></i></button>
+                        <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="buy">Buy Watch</button>
+                    </div>
+                </div>
+                <div class="watch">
+                    <img src="p16307-xenlex-mens-dress-watch.jpg" alt="Watch 5">
+                    <p>Luxury Sapphire Watch</p>
+                    <p>$399.99</p>
+                    <div class="actions">
+                        <button class="favorite"><i class="fas fa-heart"></i></button>
+                        <button class="cart"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="buy">Buy Watch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="login" class="section-login">
+        <div class="container">
+            <h2>Login</h2>
+            <form>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="signup" class="section-signup">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="username" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HOURS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLogin() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('signup').style.display = 'none';
+        }
+
+        function toggleSignup() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'none';
+        }
+
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('signup').style.display = 'none';
+    </script>
+</body>
+</html>
